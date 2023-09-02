@@ -1,0 +1,123 @@
+form{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(231, 231, 231);
+    height: 100vh;
+}
+
+label{
+    font-weight: bold;
+    margin-top: 0.5rem;
+}
+
+.form__container{
+    width: 50%;
+    background-color: #fff;
+    padding: 1rem 3rem;
+    margin: 1rem 0rem;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+}
+
+.form_common{
+    display: flex;
+    flex-direction: column;
+}
+
+.form__input_fields1{
+    
+    display: flex;
+    flex-direction: column;
+
+}
+
+input{
+    padding: 0.6rem 1.4rem;
+    border: 1px solid silver;
+    border-radius: 5px;
+    margin: 0.5rem 0rem;
+    outline: none;
+}
+
+.form__input_names{
+    display: flex;
+    gap: 3rem;
+}
+
+.form__textArea>textarea{
+    width: 100%;
+    margin: 1rem 0rem;
+    padding: 0rem 0rem 3rem 1rem;
+}
+
+button{
+    width: 100%;
+    padding: 1rem 0rem;
+    border: none;
+    color: #fff;
+    background-color: blueviolet;
+    font-weight: 600;
+    font-size: 17px;
+    border-radius: 5px;
+    margin-top: 2rem;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 900px){
+  .form__input_names{
+   justify-content:center;
+   align-items: center;
+  }
+
+  .form__input_names input{
+    width: 65%;
+  }
+  .form__textArea textarea{
+    margin-top: 1rem;
+    border: 1px solid black;
+}
+
+  
+}
+
+@media screen and (max-width: 600px){
+
+   form{
+    height: 100%;
+   }
+
+    .form__input_names{
+        flex-direction: column;
+        width: 100%;
+        gap: 0rem;
+        
+    }
+
+    .form_common{
+        align-items: flex-start;
+        margin-right: 3rem;
+    }
+    .form_common>label{
+        justify-content: flex-start;
+
+    }
+
+    .form__input_names input{
+        width: 100%;
+    }
+
+    
+
+    
+}
+
+@media screen and (max-width: 365px){
+    .form__textArea textarea{
+        margin-top: 1rem;
+        border: 1px solid black;
+    }
+
+}
